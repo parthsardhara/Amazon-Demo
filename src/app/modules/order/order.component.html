@@ -1,0 +1,9 @@
+<p>order works!</p>
+Cureent Status:- {{cureentStatus | json}}
+
+<p *ngIf="cureentStatus?.route === 'product'">Product has <ng-container *ngIf="isProduct">value</ng-container>
+    <ng-container *ngIf="!isProduct">not a value</ng-container>
+</p>
+<p *ngIf="cureentStatus?.route === 'customer'">Customer has <ng-container *ngIf="isCustomer">value</ng-container>
+    <ng-container *ngIf="!isCustomer">not a value</ng-container>
+</p>
